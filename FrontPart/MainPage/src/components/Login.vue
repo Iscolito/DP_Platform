@@ -56,6 +56,7 @@ if (r==true)
             sudopass=sudopass||(this.loginForm.username === '同师尧'&&this.loginForm.password === '123456');
             sudopass=sudopass||(this.loginForm.username === '靳心如'&&this.loginForm.password === '123456');
             sudopass=sudopass||(this.loginForm.username === '杨馥璟'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '赵家瑶'&&this.loginForm.password === '123456');
             if(sudopass){
               sessionStorage.setItem('id', '0');
               this.$router.replace({path: '/back'})
@@ -69,6 +70,7 @@ if (r==true)
             sudopass=sudopass||(this.loginForm.username === '同师尧'&&this.loginForm.password === '123456');
             sudopass=sudopass||(this.loginForm.username === '靳心如'&&this.loginForm.password === '123456');
             sudopass=sudopass||(this.loginForm.username === '杨馥璟'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '赵家瑶'&&this.loginForm.password === '123456');
             if(sudopass){
               sessionStorage.setItem('username', this.loginForm.username);
               sessionStorage.setItem('password', this.loginForm.password);
