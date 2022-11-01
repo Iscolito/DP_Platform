@@ -14,7 +14,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<h1><router-link to="/" class="link-kumya"><span data-letters="医患交流平台">医患交流平台</span></router-link></h1>
+							<h1><router-link to="/" class="link-kumya"><span data-letters="医患信息共享平台">医患信息共享平台</span></router-link></h1>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,21 +38,21 @@
 			<div class="blog-info">
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
-						<a href="single.html"> <img src="../assets/css/images/g1.jpg" class="img-responsive zoom-img" alt=""/></a>
+						<router-link to="knowledge/info1"> <img src="../assets/css/images/g1.jpg" class="img-responsive zoom-img" alt=""/></router-link>
 					</div>
 					<br></br>
-					<h2><a href="single.html">外科</a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  January 30, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+					<h2><router-link to="knowledge/info1">外科</router-link></h2>
+					<p>包含科室： </p>
+					<p>普通外科 外科综合 骨科 心血管外科 胸部外科 心胸外科 乳腺外科 烧伤科 整形外科 肝胆外科 肛肠外科 神经外科 泌尿外科 腹腔镜科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
-						<a href="single.html"> <img src="../assets/css/images/g2.jpg" class="img-responsive zoom-img" alt=""/></a>
+						<router-link to="knowledge/info1"> <img src="../assets/css/images/g2.jpg" class="img-responsive zoom-img" alt=""/></router-link>
 					</div>
 					<br></br>
 					<h2><a href="single.html">内科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  February 03, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+					<p>包含科室： </p>
+					<p>内科综合 呼吸内科 消化内科 心血管内科 血液内科 肾脏内科 内分泌科 风湿免疫科 神经内科 老年病科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -60,9 +60,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">儿科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  February 10, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>小儿外科 小儿内科 儿童保健科 新生儿专科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -70,9 +69,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">五官科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  February 20, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>眼科 耳鼻喉科 口腔科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -80,9 +78,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">皮肤性病科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  march 02, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>皮肤科 性病科 皮肤性病科综合</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -90,9 +87,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">中医科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  march 09, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>中医外科 中医内科 中医儿科 中医科综合 中医皮肤科 中医五官科 中医妇产科 中医男科 针灸科 推拿科 中医肿瘤科 中医骨伤科 中医康复科 中医肛肠科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -100,9 +96,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">肿瘤科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  march 09, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>肿瘤内科 肿瘤外科 放疗科 肿瘤康复科 肿瘤综合科</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -110,9 +105,8 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">传染科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  march 09, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>肝病科 艾滋病科 结核病 寄生虫</p>
 				</div>
 				<div class="col-md-6 blog-grids">
 					<div class="blog-img">
@@ -120,9 +114,71 @@
 					</div>
 					<br></br>
 					<h2><a href="single.html">妇产科 </a></h2>
-					<p class="snglp">Posted By<a href="#"> Admin</a> &nbsp;&nbsp;on  march 09, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor If you are going to use a passage	There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-
+					<p>包含科室： </p>
+					<p>妇科 产科 妇产科综合</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g10.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">康复科 </a></h2>
+					<p>包含科室： </p>
+					<p>康复科</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g11.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">医学影像科 </a></h2>
+					<p>包含科室： </p>
+					<p>核医学科 放射科 超声科</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g12.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">心理健康科 </a></h2>
+					<p>包含科室： </p>
+					<p>心理健康科</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g13.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">精神科 </a></h2>
+					<p>包含科室： </p>
+					<p>精神科综合</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g14.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">中西医结合 </a></h2>
+					<p>包含科室： </p>
+					<p>中西医结合</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g15.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">医学美容科 </a></h2>
+					<p>包含科室： </p>
+					<p>医学美容科</p>
+				</div>
+				<div class="col-md-6 blog-grids">
+					<div class="blog-img">
+						<a href="single.html"> <img src="../assets/css/images/g16.jpg" class="img-responsive zoom-img" alt=""/></a>
+					</div>
+					<br></br>
+					<h2><a href="single.html">其他 </a></h2>
+					<p>包含科室： </p>
+					<p>急诊科 疼痛科 预防保健科 麻醉科 特需门诊 其他</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>	
@@ -196,12 +252,19 @@ import  { prettySticky } from "../assets/js/prettySticky.js"
 
 
 export default {
+  inject: ['reload'],
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  mounted(){
+	if (location.href.indexOf("#reloaded") == -1) {
+                location.href = location.href + "#reloaded";
+                location.reload();
+            }
+  },
+  methods:{}
 }
 
 

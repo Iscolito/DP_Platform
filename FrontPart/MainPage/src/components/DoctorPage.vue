@@ -23,7 +23,7 @@
 								<li><a href="about.html" class="link-kumya"><span data-letters="关于">关于</span></a></li>	
 								<li><a href="portfolio.html" class="link-kumya"><span data-letters="个人中心">个人中心</span></a></li>
 								<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=osvRwc3Oy9bN4tPTjMHNzw" class="link-kumya"><span data-letters="联系我们">联系我们</span></a></li>
-                				<li><router-link to="/login" class="link-kumya"><span data-letters="登录">登录</span></router-link> </li>		
+                				<li><router-link to="/doctor" class="link-kumya"><span id="name">登录</span></router-link> </li>		
 							</ul>	
 							<div class="clearfix"> </div>
 						</div>
@@ -290,6 +290,11 @@ $(function () {
 import  { prettySticky } from "../assets/js/prettySticky.js"
 
 
+function welcome_name(){
+		var x=document.getElementById("name");
+		x.innerHTML=sessionStorage.getItem("username")+"(医生)";
+	}
+
 export default {
   inject: ['reload'],
   name: 'HelloWorld',
@@ -297,11 +302,13 @@ export default {
     return {
     }
   },
+  
   mounted(){
 	if (location.href.indexOf("#reloaded") == -1) {
                 location.href = location.href + "#reloaded";
                 location.reload();
             }
+	welcome_name();
   },
   methods:{}
 }

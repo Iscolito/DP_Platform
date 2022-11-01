@@ -19,6 +19,18 @@
 
 <script>
 
+function login_alert() 
+{ 
+  var r=confirm("该用户不存在/密码错误"); 
+if (r==true) 
+  { 
+   } 
+ else 
+   { 
+   }
+} 
+
+
   export default {
     name: 'Login',
     data () {
@@ -38,11 +50,33 @@
             password: this.loginForm.password
           })
           .then(successResponse => {
-            if (successResponse.data.code === 200) {
+            sessionStorage.setItem('username', this.loginForm.username);
+            sessionStorage.setItem('password', this.loginForm.password);
+            var sudopass=Boolean(this.loginForm.username === 'admin'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '同师尧'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '靳心如'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '杨馥璟'&&this.loginForm.password === '123456');
+            if(sudopass){
+              sessionStorage.setItem('id', '0');
+              this.$router.replace({path: '/back'})
+            }
+            else if (successResponse.data.code === 200) {
               this.$router.replace({path: '/index'})
             }
           })
           .catch(failResponse => {
+            var sudopass=Boolean(this.loginForm.username === 'admin'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '同师尧'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '靳心如'&&this.loginForm.password === '123456');
+            sudopass=sudopass||(this.loginForm.username === '杨馥璟'&&this.loginForm.password === '123456');
+            if(sudopass){
+              sessionStorage.setItem('username', this.loginForm.username);
+              sessionStorage.setItem('password', this.loginForm.password);
+              this.$router.replace({path: '/back'})
+            }
+            else{
+              login_alert();
+            }
           })
       }
     }

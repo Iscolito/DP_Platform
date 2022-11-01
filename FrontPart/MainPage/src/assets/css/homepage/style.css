@@ -1631,13 +1631,14 @@ h2.typoh2{
 }
 .welcome-right {
     padding: 0;
-    text-align:center
+    text-align:right
 }
 .welcome-left img {
     width: 100%;
 }
 .welcome-text.wtext-right {
     padding: 0;
+    text-align:right
 }
 .tabs-left {
     padding: 0;
@@ -2625,7 +2626,7 @@ button.navbar-toggle {
     width: 100%;
 }
 .welcome-info {
-    text-align: center;
+    text-align: right;
 }
 .welcome h4 {
     font-size: 1.1em;
