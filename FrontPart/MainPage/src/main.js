@@ -6,7 +6,7 @@ import router from './router'
 import axios from "axios"
 
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://iscolito.natapp1.cc/api'
+axios.defaults.baseURL = 'https://iscolitolink.mynatapp.cc/api'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
