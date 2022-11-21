@@ -18,7 +18,7 @@
 <main role="main">
     <!--主体内联框架区-->
     <article role="content">
-        <iframe src="/#/doctor"  name="main"></iframe>
+        <iframe v-bind:src="contents" name="main"></iframe>
         <footer role="copyright">
 			<br></br>
             <p>mod by IST工作室</p>
@@ -32,9 +32,9 @@
 				<br></br>
                 <li>导航列表</li>
                 <li><a href="setting.html" target="main"  class="active" >主页</a></li>
-                <li><a href="user.html" target="main">用户管理</a></li>
-                <li><a href="article.html" target="main">文档管理</a></li>
-                <li><a href="category.html" target="main">留言管理</a></li>
+                <li><a href="/#/userdomain" target="main"  class="active" >用户管理</a></li>
+                <li><a href="/#/dchatlist" target="main">留言管理</a></li>
+                <li><a href="category.html" target="main">文档管理</a></li>
                 <li><a href="product.html" target="main">产品管理</a></li>
             </ul>
         </nav>
@@ -62,6 +62,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+        contents:"/#/doctor"
     }
   },
   mounted(){
@@ -71,7 +72,11 @@ export default {
             }
 	welcome_name();
   },
-  methods:{}
+  methods:{
+    changePage(){
+        contents="/#/Userdomain";
+    }
+  }
 }
 
 </script>

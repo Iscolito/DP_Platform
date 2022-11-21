@@ -23,7 +23,7 @@
 								<li><a href="about.html" class="link-kumya"><span data-letters="关于">关于</span></a></li>	
 								<li><a href="portfolio.html" class="link-kumya"><span data-letters="个人中心">个人中心</span></a></li>
 								<li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=osvRwc3Oy9bN4tPTjMHNzw" class="link-kumya"><span data-letters="联系我们">联系我们</span></a></li>
-                				<li><router-link to="/login" class="link-kumya"><span data-letters="登录">登录</span></router-link> </li>		
+                				<li><router-link to="/login" class="link-kumya"><span id="name">登录</span></router-link> </li>		
 							</ul>	
 							<div class="clearfix"> </div>
 						</div>
@@ -60,7 +60,7 @@
 								<h2>患者交流</h2>	
 								<h3>反复焦虑？希望交流病情？患者专区开放中</h3>	
 								<div class="more">
-									<a href="single.html" class="button-pipaluk button--inverted"> 查看更多</a>
+									<router-link to="/chatlist" class="button-pipaluk button--inverted"> 查看更多</router-link>
 								</div>	
 							</div>	
 						</li>
@@ -138,7 +138,7 @@
 					<h4>患者交流</h4>
 					<h5>Board</h5>
 					<div class="more">
-						<a href="single.html" class="button-pipaluk button--inverted"> Read More</a>
+						<router-link to="/chatlist" class="button-pipaluk button--inverted"> Read More</router-link>
 					</div>	
 				</div>
 				<div class="clearfix"> </div>
@@ -289,10 +289,14 @@ $(function () {
 
 import  { prettySticky } from "../assets/js/prettySticky.js"
 
+function welcome_name(){
+		var x=document.getElementById("name");
+		x.innerHTML=sessionStorage.getItem("username")+"(已登录)";
+	}
 
 export default {
   inject: ['reload'],
-  name: 'HelloWorld',
+  name: 'Mainpage',
   data () {
     return {
     }
@@ -302,6 +306,10 @@ export default {
                 location.href = location.href + "#reloaded";
                 location.reload();
             }
+	if(sessionStorage.getItem("name")!=null){
+		welcome_name();
+	}
+
   },
   methods:{}
 }

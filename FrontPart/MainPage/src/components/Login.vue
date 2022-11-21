@@ -4,9 +4,10 @@
         <div class="login-wrapper">
             <div class="header">用户登录</div>
             <div class="form-wrapper">
-                <input type="text" v-model="loginForm.username" placeholder="昵称" class="input-item">
+                <input type="text" v-model="loginForm.username" placeholder="ID" class="input-item">
                 <input type="password" v-model="loginForm.password" placeholder="密码" class="input-item">
                 <button v-on:click="login" class="btn">登录</button>
+                <router-link to="/regist" ><button  class="btn">注册</button></router-link>
             </div>
             <div class="msg">
                 点击返回主页面
@@ -23,7 +24,7 @@ function login_alert()
 { 
   var r=confirm("该用户不存在/密码错误"); 
 if (r==true) 
-  { 
+  {
    } 
  else 
    { 
@@ -42,6 +43,13 @@ if (r==true)
         responseResult: []
       }
     },
+
+    mounted(){
+      if (location.href.indexOf("#reloaded") == -1) {
+                    location.href = location.href + "#reloaded";
+                    location.reload();
+                }
+      },
     methods: {
       login () {
         this.$axios
@@ -61,8 +69,14 @@ if (r==true)
               sessionStorage.setItem('id', '0');
               this.$router.replace({path: '/back'})
             }
-            else if (successResponse.data.code === 200) {
-              this.$router.replace({path: '/index'})
+            else if (successResponse.data.code === 400) {
+              login_alert();
+            }
+            else{
+              var tempname=successResponse.data.name
+              sessionStorage.setItem('name', tempname);
+              console.log(successResponse.data.name);
+              this.$router.replace({path: '/'})
             }
           })
           .catch(failResponse => {
